@@ -20,7 +20,7 @@
       background-color: var(--background);
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: space-between;
       align-items: center;
 
       .header {
@@ -63,7 +63,7 @@
             gap: 2rem;
             h1{
                 color: white;
-                font-size: 2rem;
+                font-size: 3rem;
                 font-family: "Raleway"
             }
             p{
@@ -80,6 +80,7 @@
                 border-radius: .3rem;
                 font-weight: 500;
                 font-size: .8rem;
+                box-shadow: 0px 8px 30px 0px #3F8E0060;
             }
         }
         .img-div{
@@ -96,6 +97,24 @@
                 background-position: center;
                 background-size: cover;
                 aspect-ratio: 1;
+            }
+        }
+      }
+      .footer{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        gap:1.5rem;
+        color: white;
+
+        .footer-svgs{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            div{
+                padding: .8rem 2rem;
+                border: solid 1px var(--border);
+                border-radius: .2rem;
             }
         }
       }
