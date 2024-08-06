@@ -1,0 +1,161 @@
+  /* -- golbal configuration-- */
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "IBM Plex Mono", monospace;
+  }
+
+  /* color */
+  :root {
+      --primary: #9C9C9C;
+      --background: #080808;
+      --border: #1B1B1B
+  }
+
+  /* -- Testimonial page --*/
+  .testimonial {
+      background-color: #080808;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .testimonial-div {
+          width: 75%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 3.5rem 0;
+          gap: 4rem;
+
+          .head {
+              width: 60%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              color: #9C9C9C;
+              text-align: center;
+              letter-spacing: 1%;
+              line-height: 1.5rem;
+
+              h1 {
+                  color: #fff;
+                  padding-bottom: 1rem;
+                  font-size: 2rem;
+                  font-weight: 700;
+                  font-family: "Raleway";
+              }
+
+          }
+
+          .cards {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 10%;
+
+              .card {
+                  position: relative;
+                  width: 45%;
+                  padding: 1.4rem 2rem;
+                  border-radius: 0.3rem;
+                  z-index: 1;
+
+
+                  .cote {
+                      position: absolute;
+                      z-index: 1;
+                      transform: translateY(-2.2rem) translateX(-1rem);
+                      height: 1rem;
+                  }
+
+                  .texts {
+                      color: var(--primary);
+                      display: flex;
+                      flex-direction: column;
+                      gap: 1.5rem;
+
+                      p {
+                          line-height: 1.7rem;
+                      }
+
+                      .avatar {
+                          display: flex;
+                          gap: 1rem;
+
+                          align-items: center;
+
+                          .img {
+                              width: 2.8rem;
+                              border-radius: 50%;
+                              aspect-ratio: 1;
+                              background-image: url('/static/img1.png');
+                              background-size: cover;
+                              background-position: center;
+                          }
+
+                          .img2 {
+                              width: 2.8rem;
+                              border-radius: 50%;
+                              aspect-ratio: 1;
+                              background-image: url('/static/img2.png');
+                              background-size: cover;
+                              background-position: center;
+                          }
+
+                          .img3 {
+                              width: 2.8rem;
+                              border-radius: 50%;
+                              aspect-ratio: 1;
+                              background-image: url('/static/img3.png');
+                              background-size: cover;
+                              background-position: center;
+                          }
+
+                          .img4 {
+                              width: 2.8rem;
+                              border-radius: 50%;
+                              aspect-ratio: 1;
+                              background-image: url('/static/img4.png');
+                              background-size: cover;
+                              background-position: center;
+                          }
+
+                          span {
+                              color: white;
+                              font-size: 1.1rem;
+                              font-weight: 700;
+                          }
+                      }
+                  }
+              }
+
+              .card::before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  border-radius: inherit;
+                  /* Utilise le même rayon de bordure que le div parent */
+                  padding: 1px;
+                  /* Largeur de la bordure */
+                  background: linear-gradient(to right, #484848, rgba(27, 27, 27, 0));
+                  -webkit-mask:
+                      linear-gradient(#fff 0 0) content-box,
+                      linear-gradient(#fff 0 0);
+                  -webkit-mask-composite: destination-out;
+                  mask-composite: exclude;
+                  z-index: -1;
+                  /* Positionnez le pseudo-élément derrière le contenu principal */
+                  pointer-events: none;
+              }
+
+          }
+      }
+  }
+ 
