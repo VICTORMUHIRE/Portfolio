@@ -15,6 +15,7 @@
       --border: #1B1B1B
   }
 
+
   /* -- Testimonial page --*/
   .testimonial {
       background-color: #080808;
@@ -42,6 +43,7 @@
               line-height: 1.5rem;
 
               h1 {
+
                   color: #fff;
                   padding-bottom: 1rem;
                   font-size: 2rem;
@@ -50,6 +52,7 @@
               }
 
           }
+
 
           .cards {
               width: 100%;
@@ -184,6 +187,163 @@
                   flex-direction: column;
                   align-items: flex-start;
                   justify-content: space-between;
+
+                
+   /* articles  */
+  .articles {
+      background-color: #fff;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 0;
+    
+
+      .articles-div {
+                
+                  gap: 1.2rem;
+                padding-bottom: 3rem;
+          gap: 3rem;
+
+                  .card-img {
+                      width: 100%;
+                      height: 18rem;
+                      border-radius: .3rem;
+                      background-image: url('/static/article2.png');
+                      background-position: center;
+                      background-size: cover;
+                      margin-bottom: 1rem;
+                  }
+
+                  .card-img1 {
+                      width: 100%;
+                      height: 18rem;
+                      border-radius: .3rem;
+                      background-image: url('/static/article1.png');
+                      background-position: center;
+                      background-size: cover;
+                      margin-bottom: 1rem;
+                  }
+
+                  h1 {
+                      font-family: "Raleway";
+                    color: #1B1B1B;
+                  }
+
+                  p {
+                      line-height: 1.5rem;
+                      width: 90%;
+                      color: var(--primary);
+                  }
+
+                  button {
+                      padding: .7rem 2rem;
+                      border: solid 1px #62BA1B;
+                      background-color: #3F8E00;
+                      box-shadow: 0 8px 30px 0 #3F8E0030;
+                      color: white;
+                      border-radius: .3rem;
+                      font-weight: 700;
+                      font-size: .9rem;
+                  }
+
+              }
+          }
+      }
+
+  }
+
+  /* getintouch page */
+  .getintouch {
+      background-color: #080808;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+
+      .getintouch-div {
+          width: 75%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 3rem 0;
+          gap: 3rem;
+
+          .head {
+              width: 60%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              color: #9C9C9C;
+              text-align: center;
+              letter-spacing: 1%;
+              line-height: 1.5rem;
+
+              h1 {
+                  color: #fff;
+                  padding-bottom: 1rem;
+                  font-size: 2rem;
+                  font-weight: 700;
+                  font-family: "Raleway";
+              }
+
+          }
+
+          form {
+              display: flex;
+              flex-direction: column;
+              
+              justify-content: center;
+              width: 40%;
+              gap: 1.5rem;
+              div {
+                  display: flex;
+                  flex-direction: column;
+                  width: 100%;
+                  gap: .3rem;
+                  label{
+                    color: white;
+                  }
+                  input,
+                  textarea {
+                      width: 100%;
+                      padding: .66rem;
+                      border-radius: .2rem;
+                      border: solid 1px #D8D8D8;
+                      font-size: .8gitrem;
+                  }
+                 textarea{
+                    padding-bottom:4rem ;
+                 }
+              }
+              button {
+                padding: 1rem 2rem;
+                border: solid 1px #62BA1B;
+                background-color: #3F8E00;
+                box-shadow: 0 8px 30px 0 #3F8E0030;
+                color: white;
+                border-radius: .3rem;
+                font-weight: 700;
+                font-size: .9rem;
+
+            }
+          }
+      }
+
+      .footer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+        background-color: #1B1B1B;
+        color: white;
+      }
+  }
+
                   gap: 3rem;
 
                   div {
