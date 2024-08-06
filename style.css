@@ -254,6 +254,7 @@
 
   }
 
+
   /* getintouch page */
   .getintouch {
       background-color: #080808;
@@ -342,6 +343,9 @@
         background-color: #1B1B1B;
         color: white;
       }
+
+  }
+
   }
 
                   gap: 3rem;
@@ -661,4 +665,5 @@
           }
       }
   }
+
 
