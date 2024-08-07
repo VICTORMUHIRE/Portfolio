@@ -17,7 +17,6 @@
  /* Landing page */
  .landing {
     width: 100%;
-    height: 100vh;
     background-color: var(--background);
     display: flex;
     flex-direction: column;
@@ -417,14 +416,19 @@
 
         .cards {
             width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10%;
+            display: grid;
+            grid-template-columns: (1fr,2);
+            gap: 3rem;
 
+            .card:nth-child(1){
+                grid-column: 1/2;
+            }
+            .card:nth-child(2){
+                grid-column: 2/3;
+            }
             .card {
                 position: relative;
-                width: 45%;
+                width: 100%;
                 padding: 1.4rem 2rem;
                 border-radius: 0.3rem;
                 z-index: 1;
@@ -717,5 +721,154 @@
       padding: 1rem 0;
       background-color: #1B1B1B;
       color: white;
+    }
+}
+
+
+
+
+
+/*works page responsive*/
+
+@media (max-width: 500px) {
+    
+    
+
+    .works{
+        padding: 0 2rem;
+        .works-div{
+            width: 100%;
+
+            .head {
+                width: 100%; /* Full width for the heading */
+            }
+            .work1, .work2, .work3 {
+                width: 100%;
+                flex-direction: column; /* Stack the items vertically */
+                align-items: center;
+                gap: 1rem; /* Adjust spacing */
+
+                .work1-text, .work1-img {
+                    width: 100%; /* Full width on mobile */
+                }
+            }
+        }
+
+    }
+    
+    /* 480px in rem */
+    .works-div {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+
+    .head {
+        width: 100%; /* Full width for the heading */
+    }
+
+    .work1, .work2, .work3 {
+        width: 100%;
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center;
+        gap: 2rem; /* Adjust spacing */
+    }
+
+    .work1-text, .work1-img {
+        width: 100%; /* Full width on mobile */
+    }
+
+    button {
+        width: 100%; /* Full width button */
+        text-align: center;
+        padding: 0.5rem 1rem; /* Adjust button padding */
+        box-shadow: none; /* Remove box shadow */
+    }
+    
+    .work1-text h2 {
+        font-size: 1.2rem; /* Smaller font size for headings on mobile */
+    }
+
+    .work1-text p {
+        font-size: 0.9rem; /* Smaller font size for paragraphs on mobile */
+    }
+}
+
+/*testimonials page*/
+
+@media (max-width: 500px) { /* 480px */
+
+
+    .footer-svgs{
+        display: grid;
+    }
+    .testimonial{
+        padding: 0 2rem;
+
+        .testimonial-div{
+            width: 100%;
+
+            .head {
+                width: 100%; /* Full width for the heading */
+            }
+
+            .cards{
+                max-width: 100%;
+                display: flex;
+                flex-direction: row; /* Définit la direction de flex en ligne */
+                gap: 2rem; /* Réduit l'espacement entre les cartes */
+                overflow: scroll;
+                align-items: flex-start;
+                scrollbar-width: none;
+                .card{
+                    max-width: 80%;
+                }
+            }
+
+
+        }
+
+        
+    }
+    .testimonial-div {
+        width: 90%;
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+
+    .head {
+        width: 100%;
+    }
+
+    .head h1 {
+        font-size: 1.5rem; /* Réduit la taille de la police pour le titre */
+    }
+
+    .head p {
+        font-size: 0.9rem; /* Réduit la taille de la police pour le texte */
+        line-height: 1.3rem;
+    }
+
+    .carousel {
+        width: 100%;
+        overflow-x: auto; /* Permet le défilement horizontal */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling pour iOS */
+    }
+
+    .cards {
+        flex-direction: row; /* Définit la direction de flex en ligne */
+        gap: 1rem; /* Réduit l'espacement entre les cartes */
+        width: max-content; /* Largeur adaptative au contenu */
+    }
+
+    .card {
+        width: 80%; /* Largeur des cartes pour les petits écrans */
+        flex: 0 0 auto; /* Empêche les cartes de s'étendre */
+    }
+
+    .texts p {
+        font-size: 0.9rem; /* Ajuste la taille de la police pour le paragraphe */
+    }
+
+    .img, .img2, .img3, .img4 {
+        width: 3.5rem; /* Augmente légèrement la taille des avatars */
     }
 }
