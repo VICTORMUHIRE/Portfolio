@@ -802,56 +802,7 @@
         }
     }
 
-    /*--- works page --*/
-    .works{
-        padding: 0 2rem;
-        .works-div{
-            width: 100%;
-            padding: 2rem 0;
-            gap: 2rem;
-
-            .head{
-                width: 100%;
-                text-align: justify;
-                .hr{
-                    display: none;
-                }
-            }
-            .work1{
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 1rem;
-                .work1-desk, .span-desk{
-                    display: none;
-                }
-                .span-mob{
-                    display: block;
-
-                    padding: .35rem 1rem;
-                        border-radius: 4rem;
-                        background-color: #FFF6E9;
-                        color: #FFA217;
-                        font-weight: 700;
-                }
-                .work1-mob{
-                    display: block;
-                    width: 100%;
-                    height: 15rem;
-                    border-radius: .5rem .5rem 0 0;
-                }
-
-                .work1-text{
-                    width: 100%;
-                    gap: 1rem;
-                    div{
-                        gap: .6rem;
-                    }
-                    
-                }
-            }
-        }
-    }
-    .articles{
+        .articles{
         width: 100%;
         .articles-div{
             width: 100%;
